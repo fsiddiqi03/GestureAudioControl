@@ -14,8 +14,7 @@ class AudioController:
         self.volume.SetMasterVolumeLevelScalar(new_volume / 100.0, None)
 
         # return new volume 
-        cur_volume = int(self.volume.GetMasterVolumeLevelScalar() * 100)
-        return cur_volume
+        int(self.volume.GetMasterVolumeLevelScalar() * 100)
 
     def get_volume(self):
         return int(self.volume.GetMasterVolumeLevelScalar() * 100)
